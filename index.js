@@ -1,7 +1,7 @@
 const express = require('express');
 const connectDB = require('./database/db')
 const cors = require('cors')
-
+const app = express();
 //cors configuration
 const whitelist = ["http://localhost:3000"]
 const corsOptions = {
@@ -17,7 +17,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 //create server
-const app = express();
+
 
 //database connect
 connectDB();
