@@ -9,4 +9,6 @@ const tasksController = require('../controllers/taskController')
 router.get('/', tasksController.getTasks);
 // Get a single task by user ID
 router.get('/:user_id', tasksController.getTask);
+// Get task by status
+router.get('/status/:status', tasksController.getTaskByStatus);
 module.exports = router;
