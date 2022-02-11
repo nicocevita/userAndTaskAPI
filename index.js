@@ -3,7 +3,7 @@ const connectDB = require('./database/db')
 const cors = require('cors')
 const app = express();
 //cors configuration
-const whitelist = ["http://localhost:3000"]
+const whitelist = ["http://localhost:3000", "https://serene-jennings-3637ca.netlify.app/"]
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
